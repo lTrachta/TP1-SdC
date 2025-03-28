@@ -28,6 +28,7 @@ Git Luciano:
 
 ![image](https://github.com/user-attachments/assets/26a69502-76dd-4150-8daa-bf96d5d84acf)
 ![image](https://github.com/user-attachments/assets/8fd530b1-bc73-487a-8016-ae542a7bc70d)
-
+![image](https://github.com/user-attachments/assets/aa2eb064-727a-435b-97de-a31677615b74)
+![image](https://github.com/user-attachments/assets/22686e71-5c70-4c0b-a3e7-095e4cb8e452)
 
 
