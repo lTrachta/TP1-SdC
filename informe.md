@@ -13,6 +13,7 @@
 
 Comparacion de los procesadores pedidos:
 ![image](https://github.com/user-attachments/assets/8c7c2f97-aeb8-4795-aafa-7748a3d99ae5)
+
 En esta imagen y en un texto de conclusion dice que el procesador Intel Core i5-13600K obtuvo la mayor cantidad de victorias, ocupando el primer lugar en el 80 % de las pruebas. Según la media geométrica de todos los resultados, el procesador más rápido (Intel Core i5-13600K) fue 1,14 veces más rápido que el más lento (AMD Ryzen 9 5900X de 12 núcleos).
 
 + Para calcular una aceleracion cuando usamos un AMD Ryzen 9 7950X 16-Core usamos la siguiente formula:
