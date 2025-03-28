@@ -17,7 +17,7 @@ Comparacion de los procesadores pedidos:
 
 + Para calcular una aceleracion cuando usamos un AMD Ryzen 9 7950X 16-Core usamos la siguiente formula:
 
-/*Speedup=Tiempo del procesador de referencia/Tiempo del ADM Ryzen 9 7950X 16-Core*/
+*Speedup=Tiempo del procesador de referencia/Tiempo del ADM Ryzen 9 7950X 16-Core*
 
 Si usamos como procesador de referencia el AMD Ryzen 9 5900X 12-Core tenemos Speedup= 97s/53s=1.83
 
