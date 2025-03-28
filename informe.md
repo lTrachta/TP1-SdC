@@ -15,7 +15,10 @@ Comparacion de los procesadores pedidos:
 ![image](https://github.com/user-attachments/assets/8c7c2f97-aeb8-4795-aafa-7748a3d99ae5)
 
 
-Para calcular una aceleracion cuando usamos un AMD Ryzen 9 7950X 16-Core usamos la siguiente formula:
-Speedup=Tiempo del procesador de referencia/Tiempo del ADM Ryzen 9 7950X 16-Core
++ Para calcular una aceleracion cuando usamos un AMD Ryzen 9 7950X 16-Core usamos la siguiente formula:
+
+/*Speedup=Tiempo del procesador de referencia/Tiempo del ADM Ryzen 9 7950X 16-Core*/
+
 Si usamos como procesador de referencia el AMD Ryzen 9 5900X 12-Core tenemos Speedup= 97s/53s=1.83
+
 Si usamos como procesador de referencia el Intel Core i5-13600K tenemos Speedup= 83s/53s=1.83=1.56
