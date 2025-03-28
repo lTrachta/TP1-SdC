@@ -1,4 +1,4 @@
-| Benchmark           | Tipo           | Luciano Trachta                      | Juan Manuel Ferrero         | Mateo Pickestainer                            |
+| Benchmark           | Tipo           | Luciano Trachta                      | Juan Manuel Ferrero         | Mateo Pieckenstainer                            |
 |---------------------|----------------|--------------------------------------|-----------------------------|-----------------------------------------------|
 | Linpack             | Sintético      | Cálculos matemáticos intensivos      | Throughput, Speedup         | Evalúa rendimiento en álgebra lineal          |
 | Livermore Loops     | Reducido       | Simulaciones científicas             | IPC, CPI                    | Medición en bucles de cálculo numérico        |
