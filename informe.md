@@ -25,6 +25,7 @@ Si usamos como procesador de referencia el AMD Ryzen 9 5900X 12-Core tenemos Spe
 Si usamos como procesador de referencia el Intel Core i5-13600K tenemos Speedup= 83s/53s=1.83=1.56
 
 Git Luciano:
+
 ![image](https://github.com/user-attachments/assets/26a69502-76dd-4150-8daa-bf96d5d84acf)
 ![image](https://github.com/user-attachments/assets/8fd530b1-bc73-487a-8016-ae542a7bc70d)
 
