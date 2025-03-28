@@ -1,6 +1,6 @@
 | Benchmark           | Tipo           | Integrantes                                                                 |
 |---------------------|----------------|-----------------------------------------------------------------------------|
-| Linpack             | Mide el rendimiento en cálculos matemáticos, especialmente en operaciones de álgebra lineal como la resolución de sistemas de ecuaciones.
+| Linpack             | 
       | Luciano Trachta: Cálculos matemáticos intensivos, Juan Manuel Ferrero: Throughput, Speedup, Mateo Pieckenstainer: Evalúa rendimiento en álgebra lineal |
 | Livermore Loops     | Reducido       | Luciano Trachta: Simulaciones científicas, Juan Manuel Ferrero: IPC, CPI, Mateo Pieckenstainer: Medición en bucles de cálculo numérico |
 | Fhourstones         | Kernel         | Luciano Trachta: Operaciones lógicas básicas, Juan Manuel Ferrero: Latencia, Eficiencia, Mateo Pieckenstainer: Indicador de rendimiento en instrucciones |
