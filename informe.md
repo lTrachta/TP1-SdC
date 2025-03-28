@@ -8,3 +8,8 @@
 | Renderizado en Blender              | Mide el rendimiento de la GPU al procesar escenas complejas de animación y diseño 3D.      | Luciano Trachta y Juan Ferrero (IC): No se ha utilizado hasta el momento ya que no se han desarrollado en el area de videojuegos. Mateo Pieckenstainer (IE): No usaria este benchmark. |
 | MemTest86              |  Verifica la estabilidad y velocidad de la memoria RAM mediante pruebas de lectura/escritura en diferentes patrones de acceso.      | Luciano Trachta y Juan Ferrero (IC): Podria ser de gran utilidad para poder verificar inconvenientes en la memoria Ram a la hora de realizar codigos.  Mateo Pieckenstainer (IE): Lo utilizariamos para la prueba de modulos de memoria antes de integrarlos en otros dispositivos. |
 | STREAM               | Mide el ancho de banda de la memoria en sistemas de alto rendimiento al evaluar la transferencia de datos en memoria.      | Luciano Trachta y Juan Ferrero (IC): Podria utilizarse este benchmark cuando en otra materia de la facultad se realiza transferencia de datos o paquetes en la memoria de la computadora. Mateo Pieckenstainer (IE): Podria utilizarse e sistemas embebidos que necesiten una movilidad de datos de memoria a gran velocidad |
+
+
+
+Comparacion de los procesadores pedidos:
+![image](https://github.com/user-attachments/assets/8c7c2f97-aeb8-4795-aafa-7748a3d99ae5)
