@@ -4,26 +4,26 @@ Each sample counts as 0.01 seconds.
 
   %   cumulative   self              self     total           
  time   seconds   seconds    calls   s/call   s/call  name    
-55.14      0.07     0.07        1     0.07     0.08  func1
-37.78      0.11     0.05        1     0.05     0.05  func2
- 3.69      0.12     0.004                             main
- 3.56      0.12     0.004        1     0.004    0.004 new_func1
+ 55.14      3.85     3.85        1     3.85     4.10  func1
+ 37.78      6.50     2.65        1     2.65     2.65  func2
+  3.69      6.74     0.24                             main
+  3.56      6.98     0.24        1     0.24     0.24  new_func1
 
-granularity: each sample hit covers 2 byte(s) for 0.06% of 0.12 seconds
+granularity: each sample hit covers 2 byte(s) for 0.06% of 6.98 seconds
 
 index % time    self  children    called     name
                                                  <spontaneous>
-[1]    100.0    0.004   0.116                 main [1]
-                0.066    0.004       1/1           func1 [2]
-                0.045    0.000       1/1           func2 [3]
+[1]    100.0    0.24    6.74                 main [1]
+                3.85    0.24       1/1           func1 [2]
+                2.65    0.00       1/1           func2 [3]
 -----------------------------------------------
-                0.066    0.004       1/1           main [1]
-[2]     55.1    0.066    0.004       1         func1 [2]
-                0.004    0.000       1/1           new_func1 [4]
+                3.85    0.24       1/1           main [1]
+[2]     55.1    3.85    0.24       1         func1 [2]
+                0.24    0.00       1/1           new_func1 [4]
 -----------------------------------------------
-                0.045    0.000       1/1           main [1]
-[3]     37.8    0.045    0.000       1         func2 [3]
+                2.65    0.00       1/1           main [1]
+[3]     37.7    2.65    0.00       1         func2 [3]
 -----------------------------------------------
-                0.004    0.000       1/1           func1 [2]
-[4]      3.6    0.004    0.000       1         new_func1 [4]
+                0.24    0.00       1/1           func1 [2]
+[4]      3.5    0.24    0.00       1         new_func1 [4]
 -----------------------------------------------
