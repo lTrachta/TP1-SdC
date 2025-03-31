@@ -103,7 +103,7 @@ Los resultados fueron:
 A 80 MHz = 4.869 segundos
 A 160 MHz = 2.337 segundos
 
-Vemos que al variar la frecucnia del clock, el tiempo se reduce significativamente, aunque no exacmente a la mitad, debido a factores como latencia y eficiencia. 
+Vemos que al variar la frecuencia del clock, el tiempo se reduce significativamente, aunque no exacmente a la mitad, debido a factores como latencia y eficiencia. 
 
 
 
