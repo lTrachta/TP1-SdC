@@ -1,1 +1,69 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self          	self 	total      	 
+ time   seconds   seconds	calls   s/call   s/call  name    
+ 33.62  	7.42 	7.42    	1 	7.42	14.63  func1
+ 33.62 	14.84 	7.42    	1 	7.42 	7.42  func2
+ 32.67 	22.05 	7.21    	1 	7.21 	7.21  new_func1
+  0.09 	22.07 	0.02                         	main
+
+ %     	the percentage of the total running time of the
+time   	program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self  	the number of seconds accounted for by this
+seconds	function alone.  This is the major sort for this
+       	listing.
+
+calls  	the number of times this function was invoked, if
+       	this function is profiled, else blank.
+
+ self  	the average number of milliseconds spent in this
+ms/call	function per call, if this function is profiled,
+   	else blank.
+
+ total 	the average number of milliseconds spent in this
+ms/call	function and its descendents per call, if this
+   	function is profiled, else blank.
+
+name   	the name of the function.  This is the minor sort
+       	for this listing. The index shows the location of
+   	the function in the gprof listing. If the index is
+   	in parenthesis it shows where it would appear in
+   	the gprof listing if it were to be printed.
+
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+
+         	Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.05% of 22.07 seconds
+
+index % time	self  children	called 	name
+                                             	<spontaneous>
+[1]	100.0	0.02   22.05             	main [1]
+            	7.42	7.21   	1/1       	func1 [2]
+            	7.42	0.00   	1/1       	func2 [3]
+-----------------------------------------------
+            	7.42	7.21   	1/1       	main [1]
+[2] 	66.3	7.42	7.21   	1     	func1 [2]
+            	7.21	0.00   	1/1       	new_func1 [4]
+-----------------------------------------------
+            	7.42	0.00   	1/1       	main [1]
+[3] 	33.6	7.42	0.00   	1     	func2 [3]
+-----------------------------------------------
+            	7.21	0.00   	1/1       	func1 [2]
+[4] 	32.7	7.21	0.00   	1     	new_func1 [4]
+-----------------------------------------------
+
+
 
