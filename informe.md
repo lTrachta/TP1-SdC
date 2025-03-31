@@ -42,6 +42,7 @@ Time profiling Mateo:
 ![Imagen de WhatsApp 2025-03-28 a las 16 19 47_0815240b](https://github.com/user-attachments/assets/2ef5b256-e95f-4c14-a0c2-a76e0340fbde)
 ![Imagen de WhatsApp 2025-03-28 a las 16 26 29_2e9d6078](https://github.com/user-attachments/assets/a5decbee-e127-4026-8050-3f4cc14eac08)
 
+Por problemas en el sistema operativo Linux, no pude sacar captura de los porcentajes del time profiling, pero eran de 34.7%, 33.4% y 29,3%  
 
 Time profiling Juan:
 
