@@ -24,14 +24,14 @@ Si usamos como procesador de referencia el AMD Ryzen 9 5900X 12-Core tenemos Spe
 
 Si usamos como procesador de referencia el Intel Core i5-13600K tenemos Speedup= 83s/53s=1.83=1.56
 
-Git Luciano:
+Time profiling Luciano:
 
 ![image](https://github.com/user-attachments/assets/26a69502-76dd-4150-8daa-bf96d5d84acf)
 ![image](https://github.com/user-attachments/assets/8fd530b1-bc73-487a-8016-ae542a7bc70d)
 ![image](https://github.com/user-attachments/assets/aa2eb064-727a-435b-97de-a31677615b74)
 ![image](https://github.com/user-attachments/assets/22686e71-5c70-4c0b-a3e7-095e4cb8e452)
 
-Git Mateo:
+Time profiling Mateo:
 
 ![Imagen de WhatsApp 2025-03-28 a las 16 00 42_1c9ad692](https://github.com/user-attachments/assets/1410105e-4e38-4099-82eb-a2044ef71c25)
 ![Imagen de WhatsApp 2025-03-28 a las 16 04 20_11731e63](https://github.com/user-attachments/assets/c74aef08-da78-4afb-99ca-7b6cb817013f)
@@ -43,6 +43,8 @@ Git Mateo:
 ![Imagen de WhatsApp 2025-03-28 a las 16 26 29_2e9d6078](https://github.com/user-attachments/assets/a5decbee-e127-4026-8050-3f4cc14eac08)
 
 
+Time profiling:
+![image](https://github.com/user-attachments/assets/956abe79-d28a-4d23-8288-56e5cc9662a8)
 
 
 
