@@ -32,6 +32,7 @@ Git Luciano:
 ![image](https://github.com/user-attachments/assets/22686e71-5c70-4c0b-a3e7-095e4cb8e452)
 
 Git Mateo:
+
 ![Imagen de WhatsApp 2025-03-28 a las 16 00 42_1c9ad692](https://github.com/user-attachments/assets/1410105e-4e38-4099-82eb-a2044ef71c25)
 ![Imagen de WhatsApp 2025-03-28 a las 16 04 20_11731e63](https://github.com/user-attachments/assets/c74aef08-da78-4afb-99ca-7b6cb817013f)
 ![Imagen de WhatsApp 2025-03-28 a las 16 07 28_56c40c9c](https://github.com/user-attachments/assets/9a76cdee-155e-4201-9178-1c5928b2bf47)
