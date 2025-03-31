@@ -43,7 +43,10 @@ Time profiling Mateo:
 ![Imagen de WhatsApp 2025-03-28 a las 16 26 29_2e9d6078](https://github.com/user-attachments/assets/a5decbee-e127-4026-8050-3f4cc14eac08)
 
 
-Time profiling:
+Time profiling Juan:
+
+
+
 ![image](https://github.com/user-attachments/assets/956abe79-d28a-4d23-8288-56e5cc9662a8)
 
 
