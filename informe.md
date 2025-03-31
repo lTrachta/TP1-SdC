@@ -1,3 +1,4 @@
+*PARTE 1:*
 | Benchmark           | Descripcion           | Integrantes                                                                 |
 |---------------------|----------------|-----------------------------------------------------------------------------|
 | Linpack             | Mide el rendimiento en cálculos matemáticos, especialmente en operaciones de álgebra lineal como la resolución de sistemas de ecuaciones      | Luciano Trachta y Juan Ferrero (IC): No usarian este Benchmark ya que hasta el momento no fue necesario verificar que tan rapido el procesador realiza calculos matematicos, Mateo Pieckenstainer (IE): Tampoco usaria este Benchmark, pero podria utilizarlo en un futuro para la aplicación de sistemas embebidos |
