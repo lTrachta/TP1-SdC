@@ -51,8 +51,58 @@ Time profiling Juan:
 ![image](https://github.com/user-attachments/assets/956abe79-d28a-4d23-8288-56e5cc9662a8)
 
 
+Prueba de rendimiento para una ESP32:
 
+Utilizamos el siguiente codigo en la plataforma Platform IO
 
+#include <Arduino.h>
+
+void setup() {
+  Serial.begin(115200);
+  delay(1000); 
+
+  // Cambiar la frecuencia de la CPU (ajusta entre 80, 160)
+  setCpuFrequencyMhz(80); 
+  Serial.print("Frecuencia: ");
+  Serial.print(getCpuFrequencyMhz());
+  Serial.println(" MHz");
+
+  // Medir el tiempo de ejecución del bucle
+  unsigned long startTime = millis();
+
+  // Bucle for con sumas de enteros
+  int sumInt = 0;
+  for (int i = 0; i < 1000000; i++) {
+    sumInt += i;
+  }
+
+  // Bucle for con sumas de floats
+  float sumFloat = 0.0;
+  for (float f = 0.0; f < 1000000.0; f += 1.0) {
+    sumFloat += f;
+  }
+
+  unsigned long endTime = millis();
+  unsigned long duration = endTime - startTime;
+
+  Serial.print("Suma de enteros: ");
+  Serial.println(sumInt);
+  Serial.print("Suma de floats: ");
+  Serial.println(sumFloat);
+  Serial.print("Tiempo total de ejecución: ");
+  Serial.print(duration);
+  Serial.println(" milisegundos");
+}
+
+void loop() {
+}
+
+Los resultados fueron:
+
+A 80 MHz = 4.869 segundos
+A 160 MHz = 2.337 segundos
+
+Vemos que al variar la frecucnia del clock, el tiempo se reduce significativamente, aunque no exacmente a la mitad, debido a factores como latencia y eficiencia. 
 
 
 
