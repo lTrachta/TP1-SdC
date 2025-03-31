@@ -1,29 +1,6 @@
-*PARTE 1:*
-| Benchmark           | Tipo                            | Descripción           | Integrantes                                                                 |
-|---------------------|--------------------------------|----------------|-----------------------------------------------------------------------------|
-| Linpack            | BENCHMARK SINTÉTICO            | Mide el rendimiento en cálculos matemáticos, especialmente en operaciones de álgebra lineal como la resolución de sistemas de ecuaciones. | Luciano Trachta y Juan Ferrero (IC): No usarían este Benchmark ya que hasta el momento no fue necesario verificar qué tan rápido el procesador realiza cálculos matemáticos. Mateo Pieckenstainer (IE): Tampoco usaría este Benchmark, pero podría utilizarlo en un futuro para la aplicación de sistemas embebidos. |
-| Livermore Loops    | BENCHMARKS REDUCIDOS           | Evalúa la eficiencia en cálculos numéricos utilizando una serie de bucles representativos de cargas de trabajo científicas. | Luciano Trachta y Juan Ferrero (IC): Sería de utilidad por el hecho de que mide la eficiencia del código cuando se hacen cálculos repetitivos y a la hora de programar sería de gran utilidad. Mateo Pieckenstainer (IE): Sería de gran utilidad para la simulación de circuitos específicos dentro del área de la electrónica aplicada. |
-| Fhourstones        | BENCHMARK KERNEL O DE NÚCLEO   | Se enfoca en operaciones con enteros, evaluando el rendimiento del procesador en tareas de lógica y aritmética básica. | Luciano Trachta y Juan Ferrero (IC): En el caso de que sigan la rama de la programación en videojuegos, sería de gran utilidad. Mateo Pieckenstainer (IE): Podría utilizarse para el diseño de chips destinados a tareas que necesitan eficiencia y velocidad en los cálculos. |
-| Compilación con GCC| PROGRAMAS REALES               | Analiza el rendimiento del CPU al compilar código fuente, reflejando la eficiencia en entornos de desarrollo de software. | Luciano Trachta y Juan Ferrero (IC): Sirve a los programadores para poder medir el tiempo que tarda la CPU en realizar las conversiones cuando pasan de un código fuente a un programa ejecutable. Mateo Pieckenstainer (IE): No usaría este benchmark. |
-| 3DMark             | PROGRAMAS REALES               | Evalúa la capacidad gráfica en 3D de una GPU a través de pruebas de renderizado intensivo y efectos visuales avanzados. | Luciano Trachta y Juan Ferrero (IC): Actualmente no sería de utilidad. Mateo Pieckenstainer (IE): Podría ayudar a verificar si una GPU funciona bien y si su diseño es eficiente para gráficos y simulaciones. |
-| Renderizado en Blender | PROGRAMAS REALES           | Mide el rendimiento de la GPU al procesar escenas complejas de animación y diseño 3D. | Luciano Trachta y Juan Ferrero (IC): No se ha utilizado hasta el momento ya que no se han desarrollado en el área de videojuegos. Mateo Pieckenstainer (IE): No usaría este benchmark. |
-| MemTest86          | BENCHMARK KERNEL O DE NÚCLEO   | Verifica la estabilidad y velocidad de la memoria RAM mediante pruebas de lectura/escritura en diferentes patrones de acceso. | Luciano Trachta y Juan Ferrero (IC): Podría ser de gran utilidad para poder verificar inconvenientes en la memoria RAM a la hora de realizar códigos. Mateo Pieckenstainer (IE): Lo utilizaríamos para la prueba de módulos de memoria antes de integrarlos en otros dispositivos. |
-| STREAM             | BENCHMARK KERNEL O DE NÚCLEO   | Mide el ancho de banda de la memoria en sistemas de alto rendimiento al evaluar la transferencia de datos en memoria. | Luciano Trachta y Juan Ferrero (IC): Podría utilizarse este benchmark cuando en otra materia de la facultad se realiza transferencia de datos o paquetes en la memoria de la computadora. Mateo Pieckenstainer (IE): Podría utilizarse en sistemas embebidos que necesiten una movilidad de datos de memoria a gran velocidad. |
-
-
-
-
 Comparacion de los procesadores pedidos:
 ![image](https://github.com/user-attachments/assets/8c7c2f97-aeb8-4795-aafa-7748a3d99ae5)
 
-
-+ Para calcular una aceleracion cuando usamos un AMD Ryzen 9 7950X 16-Core usamos la siguiente formula:
-
-*Speedup=Tiempo del procesador de referencia/Tiempo del ADM Ryzen 9 7950X 16-Core*
-
-Si usamos como procesador de referencia el AMD Ryzen 9 5900X 12-Core tenemos Speedup= 97s/53s=1.83
-
-Si usamos como procesador de referencia el Intel Core i5-13600K tenemos Speedup= 83s/53s=1.83=1.56
 
 Time profiling Luciano:
 
@@ -43,67 +20,7 @@ Time profiling Mateo:
 ![Imagen de WhatsApp 2025-03-28 a las 16 19 47_0815240b](https://github.com/user-attachments/assets/2ef5b256-e95f-4c14-a0c2-a76e0340fbde)
 ![Imagen de WhatsApp 2025-03-28 a las 16 26 29_2e9d6078](https://github.com/user-attachments/assets/a5decbee-e127-4026-8050-3f4cc14eac08)
 
-Por problemas en el sistema operativo Linux, no pude sacar captura de los porcentajes del time profiling, pero eran de 34.7%, 33.4% y 29,3%  
 
 Time profiling Juan:
 
-
-
 ![image](https://github.com/user-attachments/assets/956abe79-d28a-4d23-8288-56e5cc9662a8)
-
-
-Prueba de rendimiento para una ESP32:
-
-Utilizamos el siguiente codigo en la plataforma Platform IO
-
-#include <Arduino.h>
-
-void setup() {
-  Serial.begin(115200);
-  delay(1000); 
-
-  // Cambiar la frecuencia de la CPU (ajusta entre 80, 160)
-  setCpuFrequencyMhz(80); 
-  Serial.print("Frecuencia: ");
-  Serial.print(getCpuFrequencyMhz());
-  Serial.println(" MHz");
-
-  // Medir el tiempo de ejecución del bucle
-  unsigned long startTime = millis();
-
-  // Bucle for con sumas de enteros
-  int sumInt = 0;
-  for (int i = 0; i < 1000000; i++) {
-    sumInt += i;
-  }
-
-  // Bucle for con sumas de floats
-  float sumFloat = 0.0;
-  for (float f = 0.0; f < 1000000.0; f += 1.0) {
-    sumFloat += f;
-  }
-
-  unsigned long endTime = millis();
-  unsigned long duration = endTime - startTime;
-
-  Serial.print("Suma de enteros: ");
-  Serial.println(sumInt);
-  Serial.print("Suma de floats: ");
-  Serial.println(sumFloat);
-  Serial.print("Tiempo total de ejecución: ");
-  Serial.print(duration);
-  Serial.println(" milisegundos");
-}
-
-void loop() {
-}
-
-Los resultados fueron:
-
-A 80 MHz = 4.869 segundos
-A 160 MHz = 2.337 segundos
-
-Vemos que al variar la frecuencia del clock, el tiempo se reduce significativamente, aunque no exacmente a la mitad, debido a factores como latencia y eficiencia. 
-
-
-
